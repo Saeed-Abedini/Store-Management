@@ -19,8 +19,8 @@ const ProductsList = () => {
   useEffect(
     () =>
       getAllProductsAPI().then((res) => {
-        setEditProducts(res.data.products);
-        setProducts(res.data.products);
+        setEditProducts(res.data);
+        setProducts(res.data);
       }),
     [isShow]
   );
@@ -57,7 +57,6 @@ const ProductsList = () => {
   };
 
   let filteredList = useMemo(getFilteredList, [selectedCategory, editProducts]);
-
   return (
     <>
       <div className="card">
@@ -102,12 +101,10 @@ const ProductsList = () => {
                   <option value="category" disabled>
                     دسته بندی
                   </option>
-                  <option value="smartphones">گوشی هوشمند</option>
-                  <option value="laptops">لپ‌تاپ</option>
-                  <option value="fragrances">عطر</option>
-                  <option value="skincare">مراقبت از پوست</option>
-                  <option value="groceries">مواد غذایی</option>
-                  <option value="home-decoration">دکوراسیون منزل</option>
+                  <option value="men's clothing">men's clothing</option>
+                  <option value="women's clothing">women's clothing</option>
+                  <option value="jewelery">jewelery</option>
+                  <option value="electronics">electronics</option>
                 </select>
               </div>
             </div>
@@ -131,8 +128,8 @@ const ProductsList = () => {
                     <tr key={index}>
                       <td>
                         <img
-                          src={product.thumbnail}
-                          alt={product.thumbnail}
+                          src={product.image}
+                          alt={product.image}
                           width={"70px"}
                           height={"60px"}
                         />
@@ -146,7 +143,7 @@ const ProductsList = () => {
                         <div className="btn-group" role="group">
                           <button
                             type="button"
-                            className="btn btn-sm btn-outline-danger"
+                            className="btn btn-sm btn-outline-danger mx-1"
                             onClick={() => {
                               setProductId(product.id);
                               setIsShow(true);

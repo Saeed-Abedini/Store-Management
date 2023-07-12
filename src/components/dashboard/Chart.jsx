@@ -6,8 +6,8 @@ const data = {
   datasets: [
     {
       label: '# of Votes',
-      lineTension: 0.4,
-      data: [12, 19, 3, 5, 2, 3],
+      lineTension: 0.1,
+      data: [7, 25, 3, 8, 3, 8],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',

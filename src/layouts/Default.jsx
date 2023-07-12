@@ -19,7 +19,7 @@ const DefaultLayout = (props) => {
         <div className="page-content container-fluid">
           <Switch>
             {
-              /* {TODO} */
+       
               AppRoutes.map((item, index) => {
                 if (item.private) {
                   return (

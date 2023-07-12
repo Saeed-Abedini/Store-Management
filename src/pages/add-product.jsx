@@ -6,7 +6,7 @@ const AddProduct = () => {
   const [result, setResult] = useState(false);
   const onSubmit = (data) => {
     axios
-      .post("https://dummyjson.com/products/", data)
+      .post("https://fakestoreapi.com/products", data)
       .then((response) => {
         // console.log(response)
         setResult(true);

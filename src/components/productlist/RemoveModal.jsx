@@ -14,7 +14,7 @@ const RemoveModal = ({ product, onClose, onConfirm }) => {
     modalObjectRef.current = new Modal(modalRef.current, {});
 
     onClose && modalRef.current.addEventListener("hidden.bs.modal", onClose);
-  }, []);
+  }, [onClose]);
 
   useEffect(() => {
     const modal = modalObjectRef.current;

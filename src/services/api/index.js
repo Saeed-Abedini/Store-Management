@@ -10,10 +10,11 @@ export const getChart = () =>
   Axios.get('https://dummy.restapiexample.com/api/v1/employees')
 
 export const getAllProductsAPI = () =>
-  Axios.get('https://dummyjson.com/products')
+  Axios.get('https://fakestoreapi.com/products')
+
 
 export const getAllCartsAPI = () =>
-  Axios.get('https://dummyjson.com/products')
+  Axios.get('https://fakestoreapi.com/products')
 
 export const removeProductAPI = (productId) =>
-  Axios.delete(`https://dummyjson.com/products/${productId}/`)
+  Axios.delete(`https://fakestoreapi.com/products/${productId}/`)

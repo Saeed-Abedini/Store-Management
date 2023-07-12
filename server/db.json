@@ -1,43 +1,38 @@
 {
   "products": [
     {
-      "name": "A72",
-      "price": "9000",
-      "category": "mobile",
-      "availability": "34",
-      "description": "گوشی موبایل A72",
+      "title": "گوشی آیفون",
+      "price": "24000",
+      "category": "smartphones",
+      "description": "Iphone 6s",
       "id": 1
     },
     {
-      "name": "Clean Code",
-      "price": "8500",
-      "category": "book",
-      "availability": "12",
-      "description": "Clean Code Book",
+      "title": "آناناس",
+      "price": "100",
+      "category": "groceries",
+      "description": "آناناس درجه 1 اعلاء",
       "id": 2
     },
     {
-      "name": "T Shirt Nike",
-      "price": "1000",
-      "category": "tshirt",
-      "availability": "65",
-      "description": "T Shirt Nike",
+      "title": "گوشی آیفون",
+      "price": "10000",
+      "category": "smartphones",
+      "description": "sdf",
       "id": 3
     },
     {
-      "name": "IPhone X",
-      "price": "100000",
-      "category": "mobile",
-      "availability": "50",
-      "description": "IPhone X mobile",
+      "title": "گوشی آیفون",
+      "price": "10000",
+      "category": "fragrances",
+      "description": "wrwer",
       "id": 4
     },
     {
-      "name": "سلام sghl",
-      "price": "5000",
-      "category": "mobile",
-      "availability": "545",
-      "description": "j,qod\n",
+      "title": "گوشی آیفون",
+      "price": "10000",
+      "category": "smartphones",
+      "description": "dfg",
       "id": 5
     }
   ],

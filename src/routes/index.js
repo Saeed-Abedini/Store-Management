@@ -53,9 +53,15 @@ const AppRoutes = [
     icon: 'fa fa-phone',
     component: ContactUsPage,
     showInNav: true,
-
   },
-  { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true },
+  {
+    path: '/',
+    pathTo: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
+    private: true,
+    redirect: true
+  },
 ]
 
 export default AppRoutes

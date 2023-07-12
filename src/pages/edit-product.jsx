@@ -8,7 +8,7 @@ const EditProduct = () => {
 
   const onSubmit = (data) => {
     axios
-      .put(`https://api.storerestapi.com/products/${id}`, data)
+      .put(`https://fakestoreapi.com/products/${id}`, data)
       .catch((error) => console.log(error));
     history.push("/all-products");
     const span = document.createElement("span");

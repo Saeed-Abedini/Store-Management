@@ -3,7 +3,7 @@ import Chart from "components/dashboard/Chart";
 import DashboardWidget from "components/dashboard/DashboardWidget";
 import EmployeesChart from "components/dashboard/EmployeesChart";
 import React from "react";
-import { getAllCartsAPI, getAllProductsAPI } from "services/api";
+import { getAllProductsAPI } from "services/api";
 
 const Dashboard = () => {
   const [productNum, setProductNum] = useState([]);
@@ -16,7 +16,7 @@ const Dashboard = () => {
   const getProduct = async () => {
     try {
       const response = await getAllProductsAPI();
-      setProductNum(response.data.products);
+      setProductNum(response.data);
     } catch (error) {
       console.log(error);
     }
@@ -39,20 +39,17 @@ const Dashboard = () => {
     // });
     // return successOrder.length;
   };
-  const totalPrice = () => {
-    let total = 0;
-    // const successOrder = orders.filter((item) => {
-    //   return item.status === 1;
-    // });
-    // successOrder.map((item) => {
-    //   return (total += item.price);
-    // });
-    productNum.map((item) => {
-      return (total += item.price);
-    });
-    return total;
-  };
-  // json-server --watch server/db.json --port 8000
+  let total = 0;
+  productNum.map((item) => {
+    return (total += +item.price);
+  });
+  // const successOrder = orders.filter((item) => {
+  //   return item.status === 1;
+  // });
+  // successOrder.map((item) => {
+  //   return (total += item.price);
+  // });
+
   return (
     <>
       <div className="row">
@@ -69,7 +66,7 @@ const Dashboard = () => {
           <DashboardWidget
             title="درآمد کل"
             icon="coins"
-            value={`${totalPrice()} تومان`}
+            value={`${Math.floor(total)} تومان`}
             color="bg-warning"
             testId="total-incomes"
           />
