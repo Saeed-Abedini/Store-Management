@@ -5,7 +5,7 @@ import { indexRoutes } from "routes";
 
 import { AuthProvider } from "contexts/Auth";
 
-import "assets/scss/style.scss";
+import "./assets/scss/style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.rtl.min.css";
 import { ThemeProvider } from "contexts/theme";
