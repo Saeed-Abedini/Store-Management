@@ -9,3 +9,7 @@ This project is a store management system that allows users to manage products i
 5. Sort by Category: Users can also sort products based on their category, allowing for easier navigation and organization.
 6. Dashboard: The system provides a dashboard that displays key store statistics, such as total sales, number of products, and number of success orders.
 
+## [Live demo](https://store-managements-app.netlify.app/)
+
+![store-management](https://github.com/Saeed-Abedini/Store-Management/assets/58294372/b98d25ff-b1f8-432a-8857-ffbc9c41c61d)
+
